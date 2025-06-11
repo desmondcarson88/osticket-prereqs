@@ -359,4 +359,4 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 </p>
 <br />
 
-<h1 align="center"> Congrats, You've Finished Installing osTicket.</h1>
+<h1 align="center"> Congratulations, you've finished installing osTicket!!!</h1>
