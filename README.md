@@ -62,7 +62,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 <br />
 
   
-<h2 align="center">Step 3:Now we need to install / Enable IIS in Windows </h2>
+<h2 align="center">Step 3: Now we need to install / Enable IIS in Windows </h2>
 <br />
 <p>
   
@@ -163,7 +163,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 - OK
 <br/>
 <p>
-<h2 align="center">Step: 9 Reload IIS</h2>
+<h2 align="center">Step 9:  Reload IIS</h2>
 
 ![image](https://github.com/user-attachments/assets/646eac80-e288-42b6-b812-9abdcf57b652)
 
@@ -172,7 +172,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 </p>  
 <br /> 
 <p>
-  <h2 align="center">Step: 10 Install osTicket v1.15.8</h2>
+  <h2 align="center">Step 10: Install osTicket v1.15.8</h2>
 
 ![image](https://github.com/user-attachments/assets/1b824c63-156c-4fa0-a368-386d68db4e91)
 
@@ -181,7 +181,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 <br />
 <br /> 
 <p>
-  <h2 align="center">Step: 11 Rename "upload" to "osTicket"</h2>
+  <h2 align="center">Step 11: Rename "upload" to "osTicket"</h2>
 
 ![image](https://github.com/user-attachments/assets/5eb77ebe-7c90-497f-8cb4-b6743e93ad89)
 ![image](https://github.com/user-attachments/assets/e40b1f3c-4ff1-4a89-bcab-4c04d0282d30)
@@ -196,7 +196,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 </p>
 <br />
 <p>
-<h2 align="center">Step: 12 Reload IIS</h2>
+<h2 align="center">Step 12: Reload IIS</h2>
 
 ![image](https://github.com/user-attachments/assets/646eac80-e288-42b6-b812-9abdcf57b652)
 
@@ -205,7 +205,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 </p>  
 <br />
 <p>
-<h2 align="center">Step: 13 Load osTicket Site</h2>
+<h2 align="center">Step 13:  Load osTicket Site</h2>
 
 ![image](https://github.com/user-attachments/assets/21c30cd0-75ca-418e-b06a-33ae218eeb79)
 
@@ -215,7 +215,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 - (On the right) click Browse *80
 - " If you try to browse it and the website doesn't show up, you might have done something wrong."
 </p>
-<h3 align="center">Step 14: Enable Extensions in IIS: (Note that some extensions are not enabled)</h3>
+<h2 align="center">Step 14: Enable Extensions in IIS: (Note that some extensions are not enabled)</h2>
 <br />
 
 ![image](https://github.com/user-attachments/assets/af6c5fa5-9276-4251-b8ce-3f095de7ff46)
@@ -232,114 +232,131 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 - Enable php_opache.dill
 - Referesh the osTicket site in your in your browser, observe the changes
 </p>
-<h3 align="center">Step 15: Rename ost-config.php</h3>
+<h2 align="center">Step 15: Rename ost-config.php</h2>
 <br />
 <p>
-	From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php.
+<h4>From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php.</h4>
+<h4>To: C:\inetpub\wwwroot\osTicket\include\ost-config.php:</h4>
 </p>
 <p>
-	To: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
-</p>
-<p>
-	<img src="https://i.imgur.com/TEw71SD.png" height="75%" width="100%" />
+	
+![image](https://github.com/user-attachments/assets/ab390899-dae3-4317-acd3-6df8212f8ac8)
+- Windows C:
+- inetpub
+- wwwroot
+- osTicket
+- include
+- Find "ost-sampleconfig.php"
+- Right click it and rename to "ost-config.php" 
 </p>
 <br />
-<br />
-<h3 align="center">Assign Permissions: ost-config.php</h3>
-<br />
+<h2 align="center">Step 16: Assign Permissions> ost-config.php</h2>
+  
+![image](https://github.com/user-attachments/assets/43d9e867-00ce-4a38-8e42-92a2ac0434cc)
+![image](https://github.com/user-attachments/assets/518ffd3f-9d1a-4259-9a10-300abff0b9f4)
+![image](https://github.com/user-attachments/assets/25528f4b-ff86-45ee-b557-4d7f97f15bf3)
+![image](https://github.com/user-attachments/assets/1a9866b1-568e-4d7c-a5e9-aec983c0adc1)
+![image](https://github.com/user-attachments/assets/d48ab9e2-5a41-4a8c-8057-4105a9777b98)
+![image](https://github.com/user-attachments/assets/ba5ffa89-56cc-4873-811d-d495043af602)
+![image](https://github.com/user-attachments/assets/258bd6d0-1634-4449-84f6-423200aa9728)
+
 <p>
-	Disable inheritance -> Remove All:
-</p>
-<p>
-	<img src="https://i.imgur.com/1QtRWEF.png" height="75%" width="100%" />
-</p>
-<p>
-	New Permissions -> Everyone -> All:
-</p>
-<p>
-	<img src="https://i.imgur.com/YzsMXNX.png" height="75%" width="100%" />
-</p>
-<p>
-	<img src="https://i.imgur.com/k7x9yGR.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Continue Setting up osTicket in the browser (click Continue)</h3>
-<br />
-<p>
-	Name Helpdesk.
-</p>
-<p>
-	Default email (receives email from customers):
-</p>
-<p>
-	<img src="https://i.imgur.com/rvMvlNC.png" height="75%" width="100%" />
-	<img src="https://i.imgur.com/YszhIpl.png" height="75%" width="100%" />
+	
+- Right click "ost-config.php"
+- Go to properties
+- Click on Security tab
+- Advanced
+- Disable inheritance 
+- Remove all inherited permissions from this object:
+- Add
+- Select a principle
+- Enter everyone
+- Ok
+- Check Full Control
+- Ok
 </p>
 <br />
-<br />
-<h3 align="center">Download and Install HeidiSQL</h3>
-<br />
+
+<h2 align="center">Step 17: Continue Setting up osTicket in the browser</h2>
+
+![image](https://github.com/user-attachments/assets/4ee863d3-fa24-401a-985b-74d203d592d2)
+
 <p>
-	<img src="https://i.imgur.com/AEg0b2P.png" height="75%" width="100%" />
-</p>
-<p>
-	Create a new session, root/Password1.
-</p>
-<p>
-	Connect to the session:
-</p>
-<p>
-	<img src="https://i.imgur.com/9t51ApR.png" height="75%" width="100%" "/>
-</p>
-<p>
-	Create a database called “osTicket”:
-</p>
-<p>
-	<img src="https://i.imgur.com/vXzmQqg.png" height="75%" width="100%" />
+	
+- Go back to osTicket website
+- Click continue
+- Name Helpdesk
+- Enter a default email (receives email from customers)
+- Fill Admin User info.
 </p>
 <br />
-<br />
-<h3 align="center">Continue Setting up osTicket in the browser</h3>
-<br />
-<p>MySQL Database: osTicket</p>
-<p>
-	MySQL Username: root
-</p>
-<p>
-	MySQL Password: Password1:
-</p>
-<p>
-	<img src="https://i.imgur.com/akDyber.png" height="75%" width="100%" />
-</p>
-<p>Click “Install Now!”</p>
-<p>Congratulations, hopefully it is installed with no errors!</hp>
-<p>
-	<img src="https://i.imgur.com/J5omRoE.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Clean up</h3>
+<h2 align="center">Step 18: Download and Install HeidiSQL</h2>
 <br />
 <p>
-	Delete: C:\inetpub\wwwroot\osTicket\setup:
+	
+![image](https://github.com/user-attachments/assets/f93be9ba-0092-4aec-b4e3-9b92048eec1a)
+![image](https://github.com/user-attachments/assets/b8485626-6588-4e31-9abe-3a213c980a09)
+![image](https://github.com/user-attachments/assets/0c6cefc1-e460-4f2f-92cc-0e7b000771f6)
+
+
+
 </p>
 <p>
-	<img src="https://i.imgur.com/eg0ZPG3.png" height="75%" width="100%" />
+	
+- Go back to files
+- Desktop
+- osTicket-Installation
+- Open Heidi
+- Install
+- "Make sure the checkbox for (Launch HeidiSQL) is selected before you hit finish"
+- Skip
+- New
+- User: root
+- Password: root
+- Open (Your now connected to the session)
+- Create a database called "osTicket"
+- Right click "Unnamed"
+- Create New
+- Database
+- Name: osTicket
 </p>
+<br />
+
+<h2 align="center">Step 19: Continue Setting up osTicket in the browser</h2>
+
+![image](https://github.com/user-attachments/assets/2b4dba82-343f-43f7-a643-b54ab6fcc409)
+
+
+- MySQL Database: osTicket
+- MySQL Username: root
+- MySQL Password: root
+- Click “Install Now!”
+</p>
+<br />
+<h2 aligh="center">Step 20: Congratulations, hopefully it is installed with no errors!</h2>
 <p>
-	Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
-</p>
+	
+![image](https://github.com/user-attachments/assets/8b8c9537-3c79-40dd-ad85-42da39e8ecfd)
+
+<br />
+<h2 align="center">Clean up (OPTIONAL)</h2>
+
+<img src="https://i.imgur.com/eg0ZPG3.png" height="75%" width="100%" />
+<img src="https://i.imgur.com/n6k46XL.png" height="75%" width="100%" />
+<br />
+
+- Delete: C:\inetpub\wwwroot\osTicket\setup:
+- Set Permissions to “Read” only:
+- C:\inetpub\wwwroot\osTicket\include\ost-config.php:
+
+
+<h2 align="center">Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h2>
+<br />
 <p>
-	<img src="https://i.imgur.com/n6k46XL.png" height="75%" width="100%" />
+	
+![image](https://github.com/user-attachments/assets/2a64a20d-77cf-4313-a745-bd709d951f56)
+
 </p>
 <br />
-<br />
-<h3 align="center">Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h3>
-<br />
-<p>
-	<img src="https://i.imgur.com/8wvWH0H.jpg" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center"> Congrats, You've Finished Installing osTicket.</h3>
+
+<h1 align="center"> Congrats, You've Finished Installing osTicket.</h1>
